@@ -17,3 +17,7 @@ INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Java', 'java.jpg', 
 
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('version 1.0', '2022-01-12T00:00:00Z', '2022-06-06T00:00:00Z', 1L);
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('version 2.0', '2022-07-07T00:00:00Z', '2023-01-12T00:00:00Z', 1L);
+
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 1', 'class about java', 1, 'resource.jpg', 3, 'http://www.mycourse.com', 1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 2', 'class about c#', 2, 'resource.jpg', 1, 'http://www.mycourse.com', 2);
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 3', 'class about python', 3, 'resource.jpg', 2, 'http://www.mycourse.com', 1);
