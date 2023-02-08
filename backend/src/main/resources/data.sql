@@ -14,3 +14,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
 INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Java', 'java.jpg', 'grayjava.jpg');
+
+INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('version 1.0', '2022-01-12T00:00:00Z', '2022-06-06T00:00:00Z', 1L);
+INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('version 2.0', '2022-07-07T00:00:00Z', '2023-01-12T00:00:00Z', 1L);
