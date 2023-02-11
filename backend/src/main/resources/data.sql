@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('ver
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 1', 'class about java', 1, 'resource.jpg', 3, 'http://www.mycourse.com', 1);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 2', 'class about c#', 2, 'resource.jpg', 1, 'http://www.mycourse.com', 2);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('class 3', 'class about python', 3, 'resource.jpg', 2, 'http://www.mycourse.com', 1);
+
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('introduction', 'introducing java', 1, 'http://www.mycourse.com', 1, null);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('oo programming', 'introducing oo', 2, 'http://www.mycourse.com', 1, 1);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('framework', 'python framework', 1, 'http://www.mycourse.com', 2, null);

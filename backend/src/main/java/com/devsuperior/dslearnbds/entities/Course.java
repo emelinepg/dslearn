@@ -6,7 +6,6 @@ import java.util.Objects;
 import java.util.Set;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,7 +25,7 @@ public class Course implements Serializable {
 	private String imgUri;
 	private String imgGrayUri;
 	
-	@OneToMany(mappedBy = "course", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "course")
 	private Set<Offer> offers = new HashSet<>();
 	
 	public Course() {

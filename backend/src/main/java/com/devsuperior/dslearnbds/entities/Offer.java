@@ -87,6 +87,10 @@ public class Offer implements Serializable {
 		this.course = course;
 	}
 
+	public Set<Resource> getResources() {
+		return resources;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
