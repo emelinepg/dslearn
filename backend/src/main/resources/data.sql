@@ -45,3 +45,22 @@ INSERT INTO tb_task (id, description, question_count, approval_count, weight, du
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (3, 1, 1);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 'done', 1, 1, 1, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2022-12-12T00:00:00Z', 2, 'not done', 2, 1, 1, 1);
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Approved in the task', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', false, 'route1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Approved in the section', TIMESTAMP WITH TIME ZONE '2023-02-12T00:00:00Z', false, 'route2', 2);
+
+INSERT INTO tb_topic (title, body, moment, offer_id, lesson_id, author_id) VALUES ('Congratulations', 'You finished class', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, offer_id, lesson_id, author_id) VALUES ('Yay', 'You finished task', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 4, 1);
+
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
+
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('That was incredible', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 1);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Very impressive', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 2, 1);
+
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (2, 1);
+ 

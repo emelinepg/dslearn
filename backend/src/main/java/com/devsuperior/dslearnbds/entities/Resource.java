@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.devsuperior.dslearnbds.enums.ResourceType;
+import com.devsuperior.dslearnbds.entities.enums.ResourceType;
 
 @Entity
 @Table(name = "tb_resource")
