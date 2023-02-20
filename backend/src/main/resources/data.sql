@@ -61,6 +61,6 @@ INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
 INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('That was incredible', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 1);
 INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Very impressive', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 2, 1);
 
-INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 2);
 INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (2, 1);
  

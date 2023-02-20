@@ -50,6 +50,10 @@ public class Role implements Serializable {
 		this.authority = authority;
 	}
 
+	public Set<User> getUsers() {
+		return users;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

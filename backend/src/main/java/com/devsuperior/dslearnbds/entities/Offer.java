@@ -2,7 +2,9 @@ package com.devsuperior.dslearnbds.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -41,7 +43,7 @@ public class Offer implements Serializable {
 	private Set<Resource> resources = new HashSet<>();
 	
 	@OneToMany(mappedBy = "offer")
-	private Set<Topic> topics = new HashSet<>();
+	private List<Topic> topics = new ArrayList<>();
 	
 	public Offer() {
 	}
@@ -97,6 +99,10 @@ public class Offer implements Serializable {
 
 	public Set<Resource> getResources() {
 		return resources;
+	}
+
+	public List<Topic> getTopics() {
+		return topics;
 	}
 
 	@Override
