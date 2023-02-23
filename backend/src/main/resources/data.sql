@@ -46,8 +46,8 @@ INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (3, 1, 1);
 
-INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 1, 'done', 1, 1, 1, 1);
-INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2022-12-12T00:00:00Z', 2, 'not done', 2, 1, 1, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', 0, null, null, 1, 1, 1);
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) VALUES ('http://www.mycourse.com/deliver1', TIMESTAMP WITH TIME ZONE '2022-12-12T00:00:00Z', 0, null, null, 1, 1, 1);
 
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Approved in the task', TIMESTAMP WITH TIME ZONE '2023-01-12T00:00:00Z', false, 'route1', 1);
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Approved in the section', TIMESTAMP WITH TIME ZONE '2023-02-12T00:00:00Z', false, 'route2', 2);
